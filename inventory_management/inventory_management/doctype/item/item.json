@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:item_name",
+ "creation": "2025-01-27 10:25:24.734131",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "item_section",
+  "item_name",
+  "sku",
+  "column_break_zved",
+  "category",
+  "unit_of_measure",
+  "section_break_fodl",
+  "image",
+  "tab_2_tab",
+  "route"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_section",
+   "fieldtype": "Section Break",
+   "label": "item"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "item_name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "sku",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SKU",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_zved",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "category"
+  },
+  {
+   "fieldname": "unit_of_measure",
+   "fieldtype": "Data",
+   "label": "unit_of_measure"
+  },
+  {
+   "fieldname": "section_break_fodl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "image"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tab 2"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "route"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-27 15:45:13.469091",
+ "modified_by": "Administrator",
+ "module": "Inventory Management",
+ "name": "Item",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "inventory manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "warehouse manager",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "viewer",
+   "share": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
