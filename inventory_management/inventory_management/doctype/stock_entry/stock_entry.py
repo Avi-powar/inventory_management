@@ -9,8 +9,12 @@ class Stockentry(Document):
     def validate(self):
         if self.quantity <=0:
             frappe.throw("quantity must be positive value.")
+
+        self.fill_into()
+            
         
-    def after_save(self):
+        
+    def fill_into(self):
         if self.entry_type== "Stock In":
 	        quantity_change = self.quantity
         elif self.entry_type=="Stock Out":
@@ -20,11 +24,12 @@ class Stockentry(Document):
             
         
         sle = frappe.new_doc("Stock Book")
-        sle.item = self.item
+        
+        sle.item=self.item
         sle.warehouse =self.warehouse
         sle.transaction_type =self.entry_type
         sle.quantity_change = quantity_change
-        sle.stock_entery = self.name
+        sle.Stock_entery = self.name
         sle.insert()
             
         
