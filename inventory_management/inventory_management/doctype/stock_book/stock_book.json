@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "StockBook.##",
+ "autoname": "StockBook.###",
  "creation": "2025-01-27 15:29:39.079002",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -11,7 +11,7 @@
   "quantity_change",
   "column_break_hywg",
   "transaction_type",
-  "stock_entery",
+  "stock_entry",
   "stock_transfer"
  ],
  "fields": [
@@ -43,21 +43,21 @@
    "options": "Stock In\nStock Out\nStock transfer"
   },
   {
-   "fieldname": "stock_entery",
-   "fieldtype": "Link",
-   "label": "Stock_entery",
-   "options": "Stock entry"
-  },
-  {
    "fieldname": "stock_transfer",
    "fieldtype": "Link",
-   "label": "Stock_transfer",
+   "label": "stock_transfer",
    "options": "Stock Transfer"
+  },
+  {
+   "fieldname": "stock_entry",
+   "fieldtype": "Link",
+   "label": "stock_entry",
+   "options": "Stock entry"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-27 15:38:10.498554",
+ "modified": "2025-02-04 11:28:57.152963",
  "modified_by": "Administrator",
  "module": "Inventory Management",
  "name": "Stock Book",

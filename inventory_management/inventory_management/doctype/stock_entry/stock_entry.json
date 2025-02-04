@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "SE.###",
+ "autoname": "SE.####",
  "creation": "2025-01-27 14:18:35.378991",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -51,7 +51,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-29 16:32:04.328531",
+ "modified": "2025-02-04 11:31:49.297073",
  "modified_by": "Administrator",
  "module": "Inventory Management",
  "name": "Stock entry",
